@@ -52,5 +52,11 @@ p,h1{
   border-radius: 5px;
   cursor: pointer;
   color: white;
+  transition: filter 100ms transform 100ms;
 }
 
+.card_button:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+  transition: filter 100ms transform 100ms;
+}
