@@ -26,16 +26,28 @@ p,h1{
   box-shadow: 3px 3px 10px #0009;
 }
 
-.card_quote {
+.card_quote{
+  display: flex;
+}
+
+.bx {
+  align-self: flex-start;
+  padding-top: 1em;
+  font-size: 1em;
+}
+
+.quote {
   font-size: 1.1em;
   padding: 1em;
+  text-align: center;
 }
 
 .card_name {
   align-self: flex-end;
-  /* padding: 1em; */
   padding-right: 10%;
   padding-top: 0;
+  font-size: 1.6em;
+  text-align: center;
 }
 
 .btn_card {
@@ -45,10 +57,9 @@ p,h1{
 
 .card_button {
   align-self: flex-end;
-  margin-right: 1em;
   padding: 12px 20px;
   border: none;
-  width: 15%;
+  width: 100%;
   border-radius: 5px;
   cursor: pointer;
   color: white;
@@ -59,4 +70,28 @@ p,h1{
   filter: brightness(1.1);
   transform: scale(1.05);
   transition: filter 100ms transform 100ms;
+}
+
+@media (min-width: 600px) {
+  .bx {
+    padding-top: .5em;
+    font-size: 2em;
+  }
+  .card_name {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 780px) {
+  .card_button {
+    margin-right: 1em;
+    width: 15%;
+  }
+}
+
+@media (min-width: 900px) {
+  .bx {
+    padding-top: .3em;
+    font-size: 3em;
+  }
 }

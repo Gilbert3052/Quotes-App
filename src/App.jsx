@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import quoteSvg from './assets/quote.svg'
 import './App.css'
 import QuotesBox from './components/QuotesBox'
 import quotes from "./json/quotes.json"
@@ -30,7 +30,8 @@ function App() {
       <QuotesBox 
         rQuote = {quote} 
         rColor = {color}
-        rAll = {getRandomAll}  
+        rAll = {getRandomAll}
+        quoteSvg = {quoteSvg}  
       />
     </div>
   )
