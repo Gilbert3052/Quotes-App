@@ -26,10 +26,6 @@ p,h1{
   box-shadow: 3px 3px 10px #0009;
 }
 
-.card_quote{
-  display: flex;
-}
-
 .bx {
   align-self: flex-start;
   padding-top: 1em;
